@@ -1,0 +1,77 @@
+/* src/assets/styles/main.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+.header {
+    background-color: #f57f17; /* Naranja */
+    color: #fff;
+    padding: 15px; /* Aumenta el padding para mejor apariencia */
+    text-align: center; /* Centra el texto */
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente */
+}
+
+.footer {
+    background-color: #3e2723; /* Marrón */
+    color: #fff;
+    padding: 15px; /* Aumenta el padding */
+    text-align: center; /* Centra el texto */
+}
+
+.catalog-btn {
+    background-color: #f57f17; /* Naranja */
+    color: #fff;
+    border: none;
+    padding: 10px 15px; /* Mejora el padding para un aspecto más equilibrado */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em; /* Aumenta el tamaño de la fuente para mayor legibilidad */
+    transition: background-color 0.3s, transform 0.2s; /* Efecto suave */
+}
+
+.catalog-btn:hover {
+    background-color: #e64a19; /* Naranja más oscuro */
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.catalog-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+    padding: 20px;
+}
+
+.catalog-item {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px; /* Establece un ancho mínimo para los elementos */
+    background-color: #fff; /* Fondo blanco para cada ítem */
+    border: 1px solid #ddd; /* Borde ligero para separación */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s; /* Efecto suave al interactuar */
+}
+
+.catalog-item:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+}
+
+.catalog-item img {
+    width: 100%;
+    height: auto; /* Mantiene la relación de aspecto */
+    border-top-left-radius: 5px; /* Bordes redondeados en la parte superior */
+    border-top-right-radius: 5px; /* Bordes redondeados en la parte superior */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .catalog-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+}

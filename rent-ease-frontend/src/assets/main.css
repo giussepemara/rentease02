@@ -1,0 +1,79 @@
+/* src/assets/main.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    color: #333; /* Color de texto por defecto */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin: 0.5em 0; /* Espaciado superior e inferior para los encabezados */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño de fuente específico para h1 */
+}
+
+h2 {
+    font-size: 2em; /* Tamaño de fuente específico para h2 */
+}
+
+h3 {
+    font-size: 1.75em; /* Tamaño de fuente específico para h3 */
+}
+
+/* Estilos de botones */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Asegura un tamaño de texto consistente */
+    transition: background-color 0.3s, transform 0.2s; /* Suaviza la transición */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+button:focus {
+    outline: none; /* Elimina el contorno por defecto */
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Añade un contorno personalizado al enfoque */
+}
+
+/* Estilos de enlaces */
+a {
+    color: #007BFF; /* Color de enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    transition: color 0.3s; /* Suaviza el cambio de color */
+}
+
+a:hover {
+    color: #0056b3; /* Color al pasar el ratón */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    body {
+        padding: 1em; /* Añade relleno en pantallas pequeñas */
+    }
+
+    button {
+        padding: 8px 16px; /* Ajusta el tamaño del botón en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 2em; /* Reduce el tamaño del h1 en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 1.75em; /* Ajusta el tamaño de h2 en pantallas pequeñas */
+    }
+}

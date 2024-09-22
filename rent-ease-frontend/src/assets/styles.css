@@ -1,0 +1,73 @@
+/* src/assets/styled.css */
+
+* {
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten el ancho total */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    background-color: #f4f4f4; /* Color de fondo más suave */
+    color: #333; /* Color de texto predeterminado */
+}
+
+/* Contenedor principal de la aplicación */
+#app {
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    justify-content: space-between; /* Espaciado entre elementos */
+    padding: 20px; /* Añade un poco de relleno */
+}
+
+/* Estilos de encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin: 0.5em 0; /* Espaciado para encabezados */
+}
+
+/* Estilos de enlaces */
+a {
+    color: #007BFF; /* Color de enlace */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Suave transición de color */
+}
+
+a:hover {
+    color: #0056b3; /* Color de enlace al pasar el ratón */
+}
+
+/* Estilos de botones */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Consistencia en tamaño de texto */
+    transition: background-color 0.3s, transform 0.2s; /* Suave transición */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+button:focus {
+    outline: none; /* Elimina el contorno por defecto */
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Añade un contorno personalizado */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Relleno en pantallas pequeñas */
+    }
+
+    button {
+        padding: 8px 16px; /* Ajusta el tamaño de los botones */
+    }
+}
